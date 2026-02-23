@@ -166,7 +166,6 @@ export default function Hero() {
             el.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
         // Make element focusable, focus it after the animation, then remove tabindex
-        // (improves keyboard/screen-reader UX)
         const prevTab = el.getAttribute('tabindex');
         el.setAttribute('tabindex', '-1');
         setTimeout(() => {
@@ -178,8 +177,6 @@ export default function Hero() {
         // close mobile menu if open
         setMobileMenuIsOpen(false);
 
-        // Optionally update URL hash without jumping:
-        // history.pushState(null, '', `#${id}`);
     };
 
     return <section id="hero" ref={sectionRef} className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">

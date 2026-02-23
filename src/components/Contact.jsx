@@ -15,10 +15,9 @@ export default function Contact() {
   function validate() {
     if (!form.name.trim()) return "Please enter your name.";
     if (!form.email.trim()) return "Please enter your email.";
-    // simple email regex
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) return "Please enter a valid email address.";
     if (!form.message.trim()) return "Please include a message.";
-    if (form._gotcha) return "Spam detected."; // honeypot
+    if (form._gotcha) return "Spam detected.";
     return null;
   }
 
