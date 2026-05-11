@@ -5,7 +5,7 @@ export default function Navbar() {
     const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
     const handleNavClick = (e, id) => {
         e?.preventDefault();
-        const el = document.getElementById(id);
+        const el = document.getElementById(`${id}-heading`);
         if (!el) return;
 
         if (mobileMenuIsOpen) {

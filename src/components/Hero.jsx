@@ -155,16 +155,12 @@ export default function Hero() {
     
     const handleButtonClick = (e, id) => {
         e?.preventDefault();
-        const el = document.getElementById(id);
+        const el = document.getElementById(`${id}-heading`);
         if (!el) return;
 
-        if (mobileMenuIsOpen) {
-            // Smoothly scroll the section into the top of the viewport
-            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-            // Smoothly scroll the section into the center of the viewport
-            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
+        // Smoothly scroll the section into view
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
         // Make element focusable, focus it after the animation, then remove tabindex
         const prevTab = el.getAttribute('tabindex');
         el.setAttribute('tabindex', '-1');
@@ -173,10 +169,6 @@ export default function Hero() {
             if (prevTab !== null) el.setAttribute('tabindex', prevTab);
             else el.removeAttribute('tabindex');
         }, 600); // adjust timeout if you change scroll timing
-
-        // close mobile menu if open
-        setMobileMenuIsOpen(false);
-
     };
 
     return <section id="hero" ref={sectionRef} className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">

@@ -59,7 +59,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold font-vscode text-white mb-4">Contact Me</h2>
+        <h2 id="contact-heading" className="text-4xl sm:text-5xl md:text-6xl font-bold font-vscode text-white mb-4">Contact Me</h2>
 
         {!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY ? (
           <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">

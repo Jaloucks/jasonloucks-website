@@ -1,7 +1,7 @@
 export default function About() {
     return <section id="about" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-[radial-gradient(circle_at_center,#08113d_0%,#031161_200%)] p-8 rounded-lg font-courier-new border border-blue-500/20 shadow-lg">
-            <h2 className="flex text-4xl sm:text-5xl md:text-6xl font-small font-vscode tracking-[0.05em] text-white justify-center mb-12">
+            <h2 id="about-heading" className="flex text-4xl sm:text-5xl md:text-6xl font-small font-vscode tracking-[0.05em] text-white justify-center mb-12">
                 About Me
             </h2>
             <p className="text-gray-300  text-xl leading-relaxed">

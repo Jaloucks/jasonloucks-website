@@ -4,7 +4,7 @@ export default function Projects() {
     return (
     <section id="projects" className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="flex text-4xl sm:text-5xl md:text-6xl font-medium font-vscode uppercase tracking-[0.2em] text-white antialiased justify-center mb-12">
+        <h2 id="projects-heading" className="flex text-4xl sm:text-5xl md:text-6xl font-medium font-vscode uppercase tracking-[0.2em] text-white antialiased justify-center mb-12">
           PROJECTS
         </h2>
 
