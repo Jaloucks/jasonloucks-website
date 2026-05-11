@@ -155,11 +155,11 @@ export default function Hero() {
     
     const handleButtonClick = (e, id) => {
         e?.preventDefault();
-        const el = document.getElementById(`${id}-heading`);
+        const el = document.getElementById(id);
         if (!el) return;
 
-        // Smoothly scroll the section into view
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Smoothly scroll the section into the center of the viewport
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
         // Make element focusable, focus it after the animation, then remove tabindex
         const prevTab = el.getAttribute('tabindex');
