@@ -10,7 +10,7 @@ export default function Projects() {
 
         <div className="space-y-8">
             <div className="grid gap-6 lg:grid-cols-2">
-                <div className="bg-gradient-to-br from-[#15246b]/60 to-[#200b58]/50 rounded-lg shadow-md p-6 border border-purple-500/10">
+                <div className="mx-auto bg-gradient-to-br from-[#15246b]/60 to-[#200b58]/50 rounded-lg shadow-md p-6 border border-purple-500/10">
                     <h3 className="text-2xl font-semibold text-white/90 text-center">
                     Visualization Software
                     </h3>
@@ -69,6 +69,27 @@ export default function Projects() {
                     <p className="mt-2 text-gray-400 text-center">
                     Tools: Firebase, Python, HTML, CSS, OpenAI API
                     </p>
+                </div>
+                <div className="lg:col-span-2 flex justify-center">
+                  <div className="w-full lg:w-1/2 bg-gradient-to-br from-[#15246b]/60 to-[#200b58]/50 rounded-lg shadow-md p-6 border border-gray-500/10">
+                      <h3 className="text-2xl font-semibold text-white/90 text-center">
+                      Weight Lifting Automatic Detection (Work In Progress)
+                      </h3>
+
+                      <p className="mt-2 text-gray-300 text-center">
+                      Machine learning program that uses ESP-32 microcontroller with a MPU6050 module in a wrist monitor to detect what workout is being done and how many reps.
+                      </p>
+
+                      <p className="mt-2 text-gray-400 text-center">
+                      Tools: Python, C++, Scikit-learn, Codex, Render
+                      </p>
+                      <div className="flex justify-center">
+                          <a href="https://github.com/Jaloucks/WeightLiftingDetection" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-blue-400 hover:underline transform transition-all duration-200 ease-out hover:-translate-y-[2px] bg-black/70 px-4 py-2 rounded-md">
+                                  <Github className="inline-block w-5 h-5 mr-2" />
+                              GitHub
+                          </a>
+                      </div>
+                  </div>
                 </div>
             </div>
         </div>
