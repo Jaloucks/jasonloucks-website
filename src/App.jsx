@@ -6,6 +6,7 @@ import Projects from './components/Projects.jsx'
 import Education from './components/Education.jsx'
 import Contact from './components/Contact.jsx'
 
+
 function App() {
   return (
     <>
