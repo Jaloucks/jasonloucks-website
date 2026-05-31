@@ -12,7 +12,7 @@ export default function Projects() {
             <div className="grid gap-6 lg:grid-cols-2">
                 <div className="mx-auto bg-gradient-to-br from-[#15246b]/60 to-[#200b58]/50 rounded-lg shadow-md p-6 border border-purple-500/10">
                     <h3 className="text-2xl font-semibold text-white/90 text-center">
-                    Visualization Software
+                    Full-Stack CAD Visualization Software
                     </h3>
 
                     <p className="mt-2 text-gray-300 text-center">
@@ -20,7 +20,7 @@ export default function Projects() {
                     </p>
 
                     <p className="mt-2 text-gray-400 text-center">
-                    Tools: Unreal Engine, Blueprint, Node.js, Python
+                    Tools: Unreal Engine, Blueprint, Express.js, Python
                     </p>
                 </div>
 
